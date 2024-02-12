@@ -42,7 +42,7 @@ export const authOptions = {
     ],
     callbacks: {
         async singIn({ user, account }) {
-            if (account?.providers == 'credentials') {
+            if (account?.provider == 'credentials') {
                 return true;
             }
         }
